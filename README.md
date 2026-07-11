@@ -1,59 +1,82 @@
-# Student REST API using Flask
+# Student Frontend - Week 2
 
 ## Project Description
-
-This project is a RESTful API developed using Python Flask and SQLite.
-
-It performs CRUD (Create, Read, Update and Delete) operations on Student records.
-
-This project was developed as part of my Internship Week-1 Task.
-
----
-
-## Technologies Used
-
-- Python
-- Flask
-- Flask-SQLAlchemy
-- SQLite
-- Thunder Client
-
----
+This project is a Student Management System frontend built using Flask, HTML, CSS, and JavaScript. The frontend communicates with a Flask REST API to perform CRUD (Create, Read, Update, Delete) operations on student records.
 
 ## Features
-
 - Add Student
-- View All Students
-- View Student by ID
-- Update Student Details
+- View Students
+- Edit Student
 - Delete Student
+- Loading message
+- Error handling
 
----
+## Technologies Used
+- Python
+- Flask
+- HTML5
+- CSS3
+- JavaScript
+- SQLite
+
+## Project Structure
+
+```
+Student-Frontend-Week2
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+├── templates/
+│   └── index.html
+└── static/
+    ├── style.css
+    └── script.js
+```
+
+## How to Run
+
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run the application
+
+```bash
+python app.py
+```
+
+### 3. Open in browser
+
+```
+http://127.0.0.1:5000/home
+```
 
 ## API Endpoints
 
-### Create Student
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /students | Get all students |
+| GET | /students/<id> | Get a student |
+| POST | /students | Add a student |
+| PUT | /students/<id> | Update a student |
+| DELETE | /students/<id> | Delete a student |
 
-POST /students
+## Week 2 Task Completed
 
-### Get All Students
+✔ Frontend consuming Flask REST API
 
-GET /students
+✔ Add Student
 
-### Get Student by ID
+✔ View Students
 
-GET /students/<id>
+✔ Edit Student
 
-### Update Student
+✔ Delete Student
 
-PUT /students/<id>
+✔ Loading and Error Messages
 
-### Delete Student
-
-DELETE /students/<id>
-
----
-
-## Author
-
-Shaik Ahmadali
+✔ Responsive UI
